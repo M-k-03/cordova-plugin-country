@@ -9,6 +9,10 @@ Country.prototype.get = function(success, fail) {
   cordova.exec(success, fail, 'Country', 'get', []);
 };
 
+Country.prototype.upgradeFirmware = function(success, fail, args) {
+  cordova.exec(success, fail, 'Country', 'upgradeFirmware', [args]);
+};
+
 if (!window.plugins) {
   window.plugins = {};
 }
